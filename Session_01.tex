@@ -1,51 +1,60 @@
-\documentclass[12pt]{beamer}
+\documentclass[14pt, aspectratio=169]{beamer}
 
-%MATH PACKAGES
-\usepackage{amsmath} 
-\usepackage{amssymb}
-\usepackage{amsfonts}
-\usepackage{cancel}
-\usefonttheme[onlymath]{serif}
-
-%GRAPHING PACKAGE
-\usepackage{pgfplots}
-\pgfplotsset{compat=newest}
-
-%BEAMER OPTIONS
+%BEAMER SETTINGS
+\usepackage[utf8]{inputenc}
 \usepackage{ragged2e}
 \usetheme{Warsaw}
 \mode<presentation>
 \setbeamertemplate{navigation symbols}{}
 
-%BEGIN DOCUMENT HERE
+%MATH PACKAGES
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{cancel}
+\usefonttheme[onlymath]{serif}
+
+%GRAPHING PACKAGES
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+
+
 \begin{document}
 
 %META DATA
-\title{\textbf{PRECALCULUS}}
-\subtitle{Session 1: Course Introduction}
-\author{\textbf{Name of Faculty}}
-\institute{\normalsize{University of the East - Manila \\ C.M. Recto Ave., Manila, Philippines}}
-\date{All Rights Reserved \copyright \, 2016-2023 \\ \textit{Revised Ed.} 2019}
+\title{Session 1: Course Introduction}
+\subtitle{Precalculus: A Problem-Solving Approach}
+\author{JING ARQUERO}
+\institute{{\normalsize University of the East - Manila} \\ {\normalsize C.M. Recto Ave., Manila, Philippines}}
+\date{All Rights Reserved {\textrm \copyright} 2016 - 2023 \\ \textit{Revised Ed.} 2019}
 
-%SLIDE 1: TITLE PAGE
+%TITLE PAGE
 \begin{frame}
-  \maketitle
+ \maketitle
 \end{frame}
 
+%COURSE OVERVIEW
 \begin{frame}{Course Overview}
-  \begin{block}{Precalculus}
-  \justifying
-    Precalculus is a bridging or preparatory course for higher mathematics. It consists of three key concepts: Analytic Geometry, Trigonometry, and Mathematical Induction.
-  \end{block}
-  REQUISITES
-  \begin{enumerate}
-   \item Algebraic Fractions \& Rationalization;
-   \item Factoring \& Completing Squares; \textit{and}
-   \item Plotting \& Graphing on a Plane.
-  \end{enumerate}
+    \begin{block}{Precalculus}
+    Bridging course to higher mathematics.
+    \begin{itemize}
+            \item Fundamental Analytic Geometry
+            \item Trigonometry \& Trigonometric Functions
+            \item Basic Mathematical Induction
+        \end{itemize}
+    \end{block}
+
+    Requisites
+    \begin{itemize}
+     \item Algebraic Fractions \& Rationalization
+     \item Factoring \& Completing Squares
+     \item Plotting \& Graphing on the Cartesian Plane
+    \end{itemize}
+
 \end{frame}
 
-%SLIDE 2: MARKING SYSTEM
+%MARKING SYSTEM
 \begin{frame}{Marking System}
   \begin{block}{25\% Written Works}
    \begin{itemize}
@@ -63,13 +72,13 @@
 
   \begin{block}{30\% Examinations}
    \begin{itemize}
-    \item Midterms \& Finals
+    \item Prelims, Midterms \& Finals
     \item Remediation, \textit{if possible}
    \end{itemize}
   \end{block}
 \end{frame}
 
-%SLIDE 3: GOALS & SKILLS
+%GOALS & SKILLS
 \begin{frame}{Goals \& Skills}
  \begin{block}{Course Goals}
   \begin{itemize}
@@ -88,7 +97,7 @@
  \end{block}
 \end{frame}
 
-%SLIDE 4: REQUIREMENTS
+%REQUIREMENTS
 \begin{frame}{Requirements}
  \begin{itemize}
   \item Book, \textit{if available}
@@ -100,12 +109,11 @@
  \end{itemize}
 \end{frame}
 
-%SLIDE 5: CLASSROOM POLICIES
+%CLASSROOM POLICIES
 \begin{frame}{Classroom Policies}
  \begin{block}{Classroom Officers}
   \begin{itemize}
-   \item Offer assistance to everyone
-   \item Mediate on class affairs
+   \item Offer assistance \& Mediate on class affairs
    \item Help maintain classroom discipline
   \end{itemize}
  \end{block}
@@ -125,22 +133,13 @@
  \end{alertblock}
 \end{frame}
 
-%SLIDE 6: REFERENCES
-\begin{frame}{References}
-
-  All slide presentations in this series of course presentations are written in \LaTeX \, Beamer with the following packages: \\
-  \begin{itemize}
-   \item Graphics: tikz, pgfplots
-   \item Mathematics: amsmath, amssymb, amsfonts, cancel
-   \item Theme: Warsaw
-  \end{itemize}
-
-  The uncompiled file is available on: \\
-  \begin{itemize}
-   \item \texttt{https://github.com/redundies/ueshsprecal}
-  \end{itemize}
-
+% DOCUMENTATION
+\begin{frame}{Documentation}
+ This document is made with {\textrm \LaTeX} in a Linux Environment. \\~\\
+ The documentation and source codes are available at \\
+ \texttt{https://github.com/redundies/ueshsprecal} \\~\\
+ Compile in the terminal using
+ \texttt{\$ pdflatex *.tex}
 \end{frame}
-
 
 \end{document}
